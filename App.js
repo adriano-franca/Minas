@@ -30,8 +30,8 @@ export default class App extends Component {
   render(){
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.welcome}>Iniciando o Mines</Text>
-      <Text style={styles.instructions}>Tamanho da grade: {params.getRowsAmount()}x{params.getColumnsAmount()}</Text>
+      <Text>Iniciando o Mines</Text>
+      <Text>Tamanho da grade: {params.getRowsAmount()}x{params.getColumnsAmount()}</Text>
         <SafeAreaView style={styles.board}>
           <MineField board={this.state.board} />
         </SafeAreaView>

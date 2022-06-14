@@ -7,7 +7,7 @@ export default props => {
         const columns = row.map((field, c) => {
             return <Field {...field} key={c} />
         })
-        return <View style={{flexDirection: 'row'}} key={r}>{columns}</View>
+        return <SafeAreaView key={r}  style={{flexDirection: 'row'}}>{columns}</SafeAreaView>
     })
     return <SafeAreaView style={styles.container}>{rows}</SafeAreaView>
 }
