@@ -16,14 +16,14 @@ export default class App extends Component {
   minesAmount = () => {
     const cols = params.getColumnsAmount()
     const rows = params.getRowsAmount()
-    return Math.ceil(cols*rows*params.difficultLevel)
+    return Math.ceil(cols * rows * params.difficultLevel)
   }
 
   createState = () => {
     const cols = params.getColumnsAmount()
     const rows = params.getRowsAmount()
     return {
-      board: this.createMinedBoard(rows, cols, this.minesAmount())
+      board: createMinedBoard(rows, cols, this.minesAmount())
     }
   }
 
